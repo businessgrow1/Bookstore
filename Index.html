@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ @@ -58,64 +59,33 @@
+             font-size: 14px;
+         }
+     </style>
+ head>
+   <meta charset="UTF-8" />
+   <meta name="robots" content="index, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>King's Secret Bookstore</title>
+   <style>
+     body { font-family: sans-serif; margin: 0; padding: 2rem; background: #f9f9f9; }
+     header { text-align: center; margin-bottom: 2rem; }
+     .book-container { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+     .book { padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+     .buy-btn { display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #d30000; color: white; text-decoration: none; border-radius: 5px; }
+     footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: gray; }
+   </style>
+   <script>
+     const bookRedirects = {
+       '1': 'https://sela.co/6uii8',  // 4 Ways To Get Her
+       '2': 'https://sela.co/yuuhh',  // How To Increase Your Sex Life
+       '3': 'https://sela.co/ihyu7'   // Secrets Women Want You To Know
+     };
+ 
+     const urlParams = new URLSearchParams(window.location.search);
+     const bookId = urlParams.get('book');
+ 
+     if (bookId && bookRedirects[bookId]) {
+       setTimeout(() => {
+         window.location.replace(bookRedirects[bookId]);
+       }, 200);
+     }
+   </script>
+ </head>
+ <body>
+     <header>
+         <h1>King's Secret Bookstore</h1>
+         <p>Boost your confidence, relationships & sex life</p>
+     </header>
+ 
+ <header>
+   <h1>King's Secret Bookstore</h1>
+   <p>Boost your confidence, relationships & sex life</p>
+ </header>
+ 
+ <div class="book-container">
+   <div class="book">
+     <h2>4 Ways To Get Her</h2>
+     <p>Discover subtle but powerful techniques to attract the woman you want.</p>
+     <a href="?book=1" class="buy-btn">View Book</a>
+   </div>
+   <div class="book">
+     <h2>How To Increase Your Sex Life</h2>
+     <p>Level up your bedroom game and boost your sexual confidence.</p>
+     <a href="?book=2" class="buy-btn">View Book</a>
+   </div>
+   <div class="book">
+     <h2>Secrets Women Want You To Know</h2>
+     <p>Learn what she really thinks and how to use it to your advantage.</p>
+     <a href="?book=3" class="buy-btn">View Book</a>
+   </div>
+ </div>
+ 
+ <footer>
+   &copy; 2025 King's Secret. All rights reserved.
+ </footer>
+     <div class="book-container">
+         <div class="book">
+             <h2>4 Ways To Get Her</h2>
+             <p>Discover subtle but powerful techniques to attract the woman you want.</p>
+             <a href="https://sela.co/your-link-here" class="buy-btn" target="_blank">Buy Now</a>
+         </div>
+         <div class="book">
+             <h2>How To Increase Your Sex Life</h2>
+             <p>Level up your bedroom game and boost your sexual confidence.</p>
+             <a href="https://sela.co/your-link-here" class="buy-btn" target="_blank">Buy Now</a>
+         </div>
+         <div class="book">
+             <h2>Secrets Women Want You To Know</h2>
+             <p>Learn what she really thinks and how to use it to your advantage.</p>
+             <a href="https://sela.co/your-link-here" class="buy-btn" target="_blank">Buy Now</a>
+         </div>
+     </div>
+ 
+     <footer>
+         &copy; 2025 King's Secret. All rights reserved.
+     </footer>
+ </body>
+ </html>
